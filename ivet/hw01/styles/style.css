@@ -1,0 +1,21 @@
+html {
+  background-color: #d8f3f7;
+}
+
+body {
+  line-height: 1.6em;
+  width: 800px;
+  margin: 20px auto;
+  border: 1px solid #303030;
+  padding: 20px;
+  background-color: white;
+  box-shadow:  0 0px 3px #999;
+}
+
+h2{
+  border-bottom: 4px solid #498abb;
+}
+
+img{
+  width: 30px;
+}
