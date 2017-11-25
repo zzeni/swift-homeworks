@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 10px;
+    background-color: lightgray;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    width: 400px;
+    margin: auto;
+    background-color: white;
+}
+
+li {
+    width: 100px;
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.toplinks {
+    display: inline-block;
+    width: 120px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0px;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+}

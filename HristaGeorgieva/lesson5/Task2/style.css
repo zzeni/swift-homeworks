@@ -1,0 +1,56 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    margin:auto;
+}
+
+header {
+    margin: 20px 200px;
+}
+
+h1 {
+
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+h2 {
+    padding: 10px;
+    margin: 0;
+}
+
+ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    margin: auto 5px;
+
+}
+
+
+
+main {
+    margin: auto 300px;
+    padding: 10px;
+    border: 1px solid black;
+}
+section {
+    margin: 20px;
+    border: 1px dashed black;
+}
+
+p {
+    padding: 10px;
+    margin: 0;
+}

@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+#flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    padding: 10px;
+    height: 50px;
+   
+
+}
+
+img {
+  flex: 1;
+height: 30px;
+    margin: 0px;
+}
