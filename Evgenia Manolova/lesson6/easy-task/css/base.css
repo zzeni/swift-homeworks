@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: blue;
+  margin: 0;
+  padding: 10px;
+}
+
+.visible-xs {
+  color: white;
+}
+
+.visible-md, .visible-lg {
+  display: none;
+}
+

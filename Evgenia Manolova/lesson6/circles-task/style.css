@@ -1,0 +1,32 @@
+/* HINT: Use just A Colour Picker to get the colors */
+body {
+  background-color: #FAF0E6;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+.circle {
+  background-color: #7C8500;
+  color: white;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle div {
+  text-align: center;
+}
+
+.sm-only, .md-only, .lg-only {
+  display: none;
+}

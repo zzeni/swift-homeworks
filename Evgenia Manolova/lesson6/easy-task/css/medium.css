@@ -1,0 +1,12 @@
+body {
+  background-color: orange;
+  padding: 25px;
+}
+
+.visible-xs {
+  display: none;
+}
+
+.visible-md {
+  display: block;
+}

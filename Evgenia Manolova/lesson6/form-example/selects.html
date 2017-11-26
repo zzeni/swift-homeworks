@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms example</title>
+<!--    <link rel="stylesheet" href="style.css">-->
+  </head>
+
+  <body>
+    <h1>Forms selects example</h1>
+    <form method="get" action="success.html" novalidate>
+      <div>
+        <input type="checkbox" name="accept" id="accept-box">
+        <label for="accept-box">Приемам условията за ползване</label>
+      </div>
+      <div>
+        <p>Предпочитани дестинации</p>
+        <p>
+          <input type="checkbox" name="destination" id="destination-1" value="Bali">
+          <label for="destination-1">Бали</label>
+        </p>
+        <p>
+          <input type="checkbox" name="destination" id="destination-2" value="Hawaii">
+          <label for="destination-2">Хавай</label>
+        </p>
+        <p>
+          <input type="checkbox" name="destination" id="destination-3" value="Dubai">
+          <label for="destination-3">Дубай</label>
+        </p>
+        <p>
+          <input type="checkbox" name="destination" id="destination-4" value="Paris">
+          <label for="destination-4">Париж</label>
+        </p>
+      </div>
+      <div>
+        <p>Вашият пол</p>
+        <p>
+          <input type="radio" name="gender" id="gender-f" value="f">
+          <label for="gender-f">Жена</label>
+        </p>
+        <p>
+          <input type="radio" name="gender" id="gender-m" value="m">
+          <label for="gender-m">Мъж</label>
+        </p>
+      </div>
+
+      <div>
+        <label></label>
+        <input type="submit" value="Go">
+        <input type="reset" value="Ресет">
+      </div>
+
+
+    </form>
+  </body>
+</html>

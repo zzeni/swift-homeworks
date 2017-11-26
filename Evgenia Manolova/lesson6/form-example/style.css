@@ -1,0 +1,31 @@
+form > div {
+  padding: 10px;
+}
+
+form label {
+  width: 130px;
+  display: inline-block;
+  text-align: right;
+}
+
+textarea {
+  resize: none;
+  vertical-align: top;
+  width: 200px;
+  height: 100px;
+}
+
+
+:invalid {
+  box-shadow: 0 0 4px red;
+}
+
+:valid {
+  box-shadow: 0 0 4px green;
+}
+
+:blank {
+  background-color: yellow;
+}
+
+

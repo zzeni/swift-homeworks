@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      margin-bottom: 500px;
+    }
+
+    textarea {
+      vertical-align: top;
+    }
+
+    .form-group {
+      margin: 10px 0;
+    }
+
+    .form-group label {
+      display: inline-block;
+      width: 120px;
+      text-align: right;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Web Forms</h1>
+
+  <form name="Search" method="get">
+    <label>Search</label>
+    <input type="text" name="search">
+    <button type="submit">Go</button>
+  </form>
+
+  <hr>
+
+  <form action="" method="post">
+    <fieldset>
+      <legend>Basic info</legend>
+
+      <input type="hidden" name="key" value="12345">
+
+      <div class="form-group">
+        <label>Your name:</label>
+        <input type="text" placeholder="your name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label>Your email:</label>
+        <input type="email" placeholder="your email" name="email">
+      </div>
+      <div class="form-group">
+        <label>Your password:</label>
+        <input type="password" name="password">
+      </div>
+      <div class="form-group">
+        <label>Your color:</label>
+        <input type="color" value="#0000ff">
+      </div>
+      <div class="form-group">
+        <label>Range:</label>
+        <input type="range">
+      </div>
+      <div class="form-group">
+        <label>Date:</label>
+        <input type="date">
+      </div>
+      <div class="form-group">
+        <label>Your message:</label>
+        <textarea cols="20" rows="5" placeholder="What do you think?" name="message"></textarea>
+      </div>
+      <div class="form-group">
+        <label></label>
+        <button type="submit">Go</button>
+        <button type="reset">Reset</button>
+      </div>
+    </fieldset>
+  </form>
+
+  <form action="" method="get">
+    <fieldset>
+      <legend>Selects</legend>
+
+      <p>What IT technologies do you know?</p>
+      <label>
+        <input type="checkbox" name="it" value="html">
+        HTML
+      </label>
+      <label>
+        <input type="checkbox" name="it" value="css">
+        CSS
+      </label>
+      <label>
+        <input type="checkbox" name="it" value="js">
+        JavaScript
+      </label>
+
+      <p>What age are you?</p>
+      <label>
+        <input type="radio" name="age" value="child">
+        1 - 19
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="age" value="young">
+        20 - 29
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="age" value="middle">
+        30 - 49
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="age" value="elder">
+        50 - 100
+      </label>
+      <br>
+
+      <p>What's your country?</p>
+
+      <select name="country">
+        <option>Please choose</option>
+        <option value="BG" >Bulgaria</option>
+        <option value="UK">UK</option>
+        <option value="DE">Germany</option>
+        <option value="ES">Spain</option>
+      </select>
+
+
+
+      <div class="form-group">
+        <button>Submit</button>
+      </div>
+
+
+
+
+    </fieldset>
+
+
+  </form>
+</body>
+</html>
