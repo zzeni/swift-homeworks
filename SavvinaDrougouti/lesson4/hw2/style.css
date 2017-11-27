@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#main-container {
+  display: flex;
+  height: 100vh;  
+}
+
+.navigation {
+  background-color: rgb(153, 185, 241);
+  width: 25vw;
+  max-width: 200px;
+  padding-right: 40px;
+  flex-shrink: 0;
+}
+
+#right {
+  overflow: auto;
+}
+
+header {
+  background-color: pink;
+  padding: 10px;
+}
+
+main {
+  background-color: rgb(244, 250, 212);
+  padding: 10px;
+}
+
+footer {
+  background-color: lightgreen;
+  text-align: center;
+  padding: 40px;
+}
