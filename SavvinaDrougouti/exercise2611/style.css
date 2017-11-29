@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+
+@media (min-width: 650px) {
+    body {
+        background-color: rgb(200, 200, 214);
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: rgb(253, 231, 193);
+    }
+}
+
+textarea {
+    vertical-align: top;
+}
+
+.form1 label {
+    display: inline-block;
+    width: 110px;
+    
+}
+
+button {
+    background-color: grey;
+    color:white;
+    margin-left: 114px
+}
+
+fieldset {
+    width: 500px;
+    background-color: lemonchiffon;
+    border: solid blue;
+}

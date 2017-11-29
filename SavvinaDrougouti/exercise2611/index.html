@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My 1st Form</h1>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Basic Info</legend>
+            <div class="form1">
+                <label>Your name:</label>
+                <input type="text" placeholder="Maria">
+            </div>
+            <div class="form1">
+                <label>Your email:</label>
+                <input type="email" placeholder="maria@mail.com">
+            </div>
+            <div class="form1">
+                <label>Telephone:</label>
+                <input type="tel" placeholder="+359 111 111 01">
+            </div>
+
+            <div class="form1">
+                <label>Your language</label>
+            <select name="language" required>
+            <option value="BG">Bulgarian</option>
+            <option value="GR">Greek</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+
+        <div class="form1">
+            <label>Your comment</label>
+            <input type="text" name="" id="">
+        </div>
+
+            <div class="form1">
+                <button>Submit</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Other</legend>
+
+            <p>Your IT skills:</p>
+            <label>
+                <input type="checkbox" name="it" id="">HTML
+            </label>
+            <label>
+                <input type="checkbox" name="it" id="">CSS
+            </label>
+            <label>
+                <input type="checkbox" name="it" id="">JS
+            </label>
+
+            <div>
+
+            </div>
+            <p>Your age</p>
+            <label>
+                    <input type="radio" name="it" id="">more than 18
+                </label>
+            <label>
+                    <input type="radio" name="it" id=""> less than 18
+                </label>
+
+                <div>
+            <p>Your country*</p> 
+                <select name="country" required>
+                <option value="BG">Bulgaria</option>
+                <option value="GR">Greece</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
