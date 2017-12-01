@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+  background-color: #d8f3f7;
+}
+
+body {
+  background-color: white;
+  box-shadow: 0 3px 3px #999;
+  border-top: 4px solid #498abb;
+  height: 60px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  width: 700px;
+  margin: auto
+}
+
+li {
+  width: 150px;
+  height: 55px;
+  border-right: 1px solid #303030;
+  text-align: center;
+  padding: 10px;
+  float: left;
+  background-color: white;
+}
+
+li:last-child{
+  border-right: none;
+}
+
+a {
+  color: #202020;
+  text-decoration: none;
+  font-size: 20px;
+ }
+
+a:hover {
+  font-weight: 700;
+  color: #498abb;
+

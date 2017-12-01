@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+#flex-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3a433;
+    height: 70px;
+    width: 700px;
+}
+
+h1 {
+    display: flex;
+    /*justify-content: flex-start;*/
+    align-items: center;
+    margin-left: 10px;
+}
+
+a {
+    display: flex;
+    /*justify-content: flex-end;*/
+    align-items: center;
+}
+
+img {
+    height: 30px;
+    margin-right: 10px;
+}
