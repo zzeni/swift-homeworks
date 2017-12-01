@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+#left {
+    flex-basis: 25%;
+    max-width: 400px;
+    margin: 0;
+    padding: 10px;
+    background-color: lightblue;
+    height: 100vh;
+    border-right: 2px solid grey;
+
+
+}
+
+#sidenav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fi {
+    flex-shrink: 1;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+
+.data {
+
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    overflow: auto;
+    height: 100vh;
+
+}
+
+header {
+    background-color: lightcoral;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    border-bottom: 2px solid grey;
+}
+
+#topnav {
+    position: absolute;
+    right: 50px;
+    bottom: -10px;
+
+}
+
+#topnav a {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: aliceblue;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    background-color: lightgoldenrodyellow;
+}
+
+#contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#profilepicture {
+    width: 20%;
+    float: left;
+    margin: 20px;
+    margin-top: 0;
+    border: 3px solid black;
+    border-radius: 10px;
+
+}
+
+#portfolio {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+#portfolio img {
+    width: 100%;
+    border: 1px solid grey;
+    margin: 20px;
+    margin-bottom: 50px;
+    
+}
+
+#arrow {
+    width: 35px;
+    position: fixed;
+    bottom: 10px;
+    left: 30px;
+}
