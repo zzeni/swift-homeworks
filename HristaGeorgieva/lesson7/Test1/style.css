@@ -1,0 +1,170 @@
+
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6em;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 600px;
+}
+
+.square {
+    color: white;
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+    .red, .blue, .green, .black {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .red {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .blue {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    
+      .green {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    
+      .black {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    .red, .blue, .green, .black {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .blue {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .green {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    
+      .black {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    
+      .red {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+}
+
+@media (min-width: 600px) and (max-width: 699px) {
+    .red, .blue, .green, .black {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .green {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .black {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    
+      .red {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    
+      .blue {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+}
+
+@media (min-width: 700px) and (max-width: 799px) {
+    .red, .blue, .green, .black {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .black {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .red {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    
+      .blue {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    
+      .green {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+}
+
+@media (min-width: 800px) {
+    body {
+        flex-direction: row;
+    }
+    
+      .red, .blue, .green, .black {
+        width: 200px;
+        height: 200px;
+    }
+}
