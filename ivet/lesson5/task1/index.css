@@ -1,0 +1,13 @@
+body{
+	padding: 50px;
+}
+
+p{
+	width: 500px;
+	background-image: url(montain2.jpg);
+	background-size: cover;
+	margin: 30px auto;
+	border: 1px solid #303030;
+	padding: 30px;
+	/*background-attachment: fixed;*/
+}
