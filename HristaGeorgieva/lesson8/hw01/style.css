@@ -37,6 +37,21 @@ nav ul li {
     left: 0;
 }
 
+#about:hover {
+    z-index: 100;
+}
+
+#resume:hover {
+    z-index: 100;
+}
+
+#portfolio:hover {
+    z-index: 100;
+}
+
+#contact:hover {
+    z-index: 100;
+}
 
 #resume {
     background-color: #488448;
