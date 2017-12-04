@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.black{
+    background-color: black;
+}
+
+@media (max-width: 400px){
+  .square{
+    width: 100%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px){
+  .square{
+    position: absolute;
+  }
+  .red{
+      top: 0;
+      left: 0;
+  }
+  .blue{
+    top: 0;
+    right: 0;
+
+  }
+  .green{
+    bottom: 0;
+    left: 0;
+  }
+  .black{
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px){
+  .square{
+    position: absolute;
+  }
+  .blue{
+      top: 0;
+      left: 0;
+  }
+  .green{
+    top: 0;
+    right: 0;
+
+  }
+  .black{
+    bottom: 0;
+    left: 0;
+  }
+  .red{
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px){
+  .square{
+    position: absolute;
+  }
+  .green{
+      top: 0;
+      left: 0;
+  }
+  .black{
+    top: 0;
+    right: 0;
+
+  }
+  .red{
+    bottom: 0;
+    left: 0;
+  }
+  .blue
+
+  {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px){
+  .square{
+    position: absolute;
+  }
+  .black{
+      top: 0;
+      left: 0;
+  }
+  .red{
+    top: 0;
+    right: 0;
+
+  }
+  .blue{
+    bottom: 0;
+    left: 0;
+  }
+  .green{
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 800px){
+  .square{
+    position: absolute;
+  }
+  .blue{
+    margin-left: 200px;
+
+  }
+  .green{
+    margin-left: 400px;
+  }
+  .black{
+    margin-left: 600px;
+  }
+}
