@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+.main {
+/*    border: 1px solid;*/
+    display: flex;
+    width: 70%;
+    height: 400px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+aside {
+    padding-right: 15px;
+    text-align: left;
+    background-color: pink;
+    border: 1px solid;
+    border-right: none;
+    width: 25%;
+}
+
+.right-container {
+    border: 1px solid;
+    overflow: scroll;
+}
+
+main {
+    text-align: justify;
+    padding: 15px;
+    background-color: lightgrey;
+}
+
+header {
+    border-bottom: 1px solid;
+    padding: 10px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+footer {
+    border-top: 1px solid;
+    padding: 10px;
+    text-align: center;
+    background-color: bisque;
+}
+
