@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+html{
+    background-color: #FF4E5C;
+    font: 16px 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #3CC7D7;
+    width: 80%;
+    margin: 130px auto 0 auto;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
