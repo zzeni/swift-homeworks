@@ -1,0 +1,170 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6em;
+}
+
+.square {
+  color: white;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.black {
+  background-color: black;
+}
+
+/* Smallest first (<399px) */
+
+@media (max-width: 399px) {
+
+div{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+}
+
+/* 400 - 499 */
+
+@media screen and (min-width: 400px) and (max-width: 499px){
+
+  .red{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+  .blue{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+  .green{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+  .black{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+}
+
+/*500 - 599 */
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+
+  .blue{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+  .green{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+  .black{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+  .red{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+}
+
+/*600 - 699 */
+
+@media screen and (min-width: 600px) and (max-width: 699px) {
+
+  .green{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+  .black{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+  .red{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+  .blue{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+}
+
+/*700 - 799 */
+
+@media screen and (min-width: 700px) and (max-width: 799px) {
+
+  .black{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+  .red{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+  .blue{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+  .green{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+}
+
+/*> 800 */
+
+@media screen and (min-width: 800px){
+
+  div{
+    float: left;
+}
+}
+
