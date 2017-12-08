@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6em;
+}
+
+.container {
+  border: 2px solid black;
+  width: 100%;
+  min-height: 600px;
+}
+
+.square {
+  color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.black {
+  background-color: black;
+}
+
+div {
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    max-height: 100%;
+}
+/* Smallest first (<399px) */
+@media (max-width: 399px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
+
+/* 400 - 499 */
+@media (min-width: 400px) and (max-width: 499px) {
+        
+    body {
+        position: relative;
+    }
+    
+    div {
+       text-align: center;
+    }
+    
+    .blue {
+        position: absolute;
+        top: 0px;
+        right: 0px;        
+    }
+    
+    .black {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+/* 500 - 599 */
+@media (min-width: 500px) and (max-width: 599px) {
+    
+    body {
+        position: relative;
+    }
+    
+    div {
+       text-align: center;
+    }
+    
+    .green {
+        position: absolute;
+        top: 0px;
+        right: 0px;        
+    }
+    
+    .red {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+/* 600 - 699 */
+@media (min-width: 600px) and (max-width: 699px) {
+    
+    body {
+        position: relative;
+    }
+    
+    div {
+       text-align: center;
+    }
+    
+    .black {
+        position: absolute;
+        top: 0px;
+        right: 0px;        
+    }
+    
+    .blue {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+/* 700 - 799 */
+@media (min-width: 700px) and (max-width: 799px) {
+    
+    body {
+        position: relative;
+    }
+    
+    div {
+       text-align: center;
+    }
+    
+    .red {
+        position: absolute;
+        top: 0px;
+        right: 0px;        
+    }
+    
+    .green {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+/* > 800 */
+@media (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+}
