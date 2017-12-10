@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+#menu {
+    display: none;
+}
+
+body {
+    font-family: sans-serif;
+    color: #222;
+    margin: 0;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+
+    /*    Без overflow-x: hidden ми излиза хоризонтален скрол, не знам защо. Проверих си всички елементи, сложих им max-width, и пак не става*/
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+nav {
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header h1 {
+    letter-spacing: 3px;
+}
+
+header nav ul li a {
+    border-bottom: 1px solid #a0a0a0;
+    padding: 5px 0;
+    letter-spacing: 3px;
+
+}
+
+#intro {
+    height: 70vh;
+    width: 100vw;
+    background-image: url(design-task/images/header-bg.jpeg);
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro h1 {
+    background: rgba(255, 255, 255, 0.81);
+    padding: 40px 80px;
+    border: 5px solid #dbdbdb;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+small {
+    font-size: 0.5em;
+    padding-top: 10px;
+    color: #a0a0a0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+}
+
+#secondnav ul {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    list-style: none;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    color: #a0a0a0;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+
+#secondnav ul li {
+    padding: 5px;
+
+}
+
+#li {
+    min-width: 150px;
+}
+
+#gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+#gallery img {
+    padding: 5px;
+}
+
+
+footer {
+    background-color: #222;
+    color: #8e8d8d;
+    height: 30vh;
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a {
+    color: #8e8d8d;
+    text-decoration: none;
+    padding: 20px;
+}
+
+footer p {
+    padding: 20px;
+    font-size: 0.8em;
+}
+
+@media (max-width: 650px) {
+    header {
+        display: block;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    header nav ul li {
+        width: 100vw;
+        text-align: center;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    header nav ul li:first-child {
+        border-top: 1px solid #dbdbdb;
+    }
+
+    header nav ul li a {
+        border: none;
+        margin: 5px 0;
+    }
+
+
+    header h1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #menu {
+        text-decoration: none;
+        display: flex;
+        color: inherit;
+        align-self: center;
+    }
+
+    #secondnav ul {
+        width: 100vw;
+        font-size: 0.6em;
+        margin: 0 5px;
+        padding: 5px;
+
+    }
+
+    #secondnav ul li {
+        flex-shrink: 1;
+        padding: 10px 5px;
+    }
+
+    #li {
+        min-width: 5px;
+    }
+
+    #gallery {
+        flex-direction: column;
+    }
+
+    #gallery img {
+        width: 100vw;
+    }
+
+    #intro h1 {
+        padding: 30px 20px;
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    #intro h1 {
+        font-size: 1.1em;
+        padding: 20px 5px;
+    }
+
+    #secondnav ul {
+        max-width: 100vw;
+        font-size: 0.5em;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    #secondnav ul {
+        width: 100vw;
+    }
+}

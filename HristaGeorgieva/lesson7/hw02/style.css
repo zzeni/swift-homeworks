@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    max-width: 100vw;
+}
+
+nav {
+    width: 450px;
+    margin: 10px auto;
+}
+
+#relative {
+    position: relative;
+    height: 120px;
+}
+
+nav ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px dashed rgba(255, 255, 255, 0.41);
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+    font-size: 18px;
+}
+
+
+#about {
+    background-color: #965453;
+    position: absolute;
+    left: 0;
+}
+
+
+#resume {
+    background-color: #488448;
+    position: absolute;
+    left: 110px;
+}
+
+#portfolio {
+    background-color: #968353;
+    position: absolute;
+    left: 220px;
+}
+
+#contact {
+    background-color: #484855;
+    position: absolute;
+    left: 330px;
+}
+
+a {
+    text-decoration: none;
+    color: #efefef;
+}
+
+main {
+    background-color: #965453;
+    width: 800px;
+    margin: 50px auto;
+    height: 100vh;
+    border: 10px dashed rgba(255, 255, 255, 0.41);
+}
+
+main h1 {
+    margin: 0;
+    border-bottom: 10px dashed rgba(255, 255, 255, 0.41);
+    padding: 50px 0;
+    text-align: center;
+    background-color: #4A2A29;
+}
+
+@media (max-width: 810px) {
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul li {
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    #about,
+    #resume,
+    #portfolio,
+    #contact {
+        right: 0;
+        left: 0;
+        height: 50px;
+    }
+
+    #about {
+        top: 0;
+    }
+
+    #resume {
+        top: 50px;
+    }
+
+    #portfolio {
+        top: 100px;
+    }
+
+    #contact {
+        top: 150px;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+        margin-top: 150px;
+    }
+}
