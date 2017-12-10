@@ -1,0 +1,109 @@
+*{
+  box-sizing: border-box;
+}
+ul{
+  display: inline;
+  list-style-type: none;
+}
+ul li{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+#about{
+  border: 2px dashed grey;
+  background-color: darkred;
+  color: white;
+}
+ #resume{
+   border: 2px dashed grey;
+   background-color: darkgreen;
+   color: white;
+ }
+#portfolio{
+  border: 2px dashed grey;
+  background-color: brown;
+  color: white;
+}
+#contact{
+  border: 2px dashed grey;
+  background-color: purple;
+  color: white;
+}
+p img{
+  float: none;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+#par1, #par2{
+  padding-bottom: 25px;
+}
+
+#contacts{
+background-color:grey;
+color:darkred;
+padding: 10px;
+margin-bottom: 25px;
+text-align: center;
+font-size: 15px;
+font-style: oblique;
+}
+
+#thefooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 60px;
+  margin-bottom: 600px;
+}
+#thefooter::before{
+    content: "Copyright \00a9 IvelinCorp. - Designed by Ivelin Ivanov";
+}
+#thefooter img{
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 20%;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: "Futura", sans-serif;
+}
+@media(min-width: 481px){
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+ul li{
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 2px dashed grey;
+  margin-left: -10px;
+  list-style-type: none;
+  text-align: center;
+  line-height: 120px;
+}
+
+#about:hover, #resume:hover, #portfolio:hover, #contact:hover{
+  z-index: 1;
+}
+main{
+}
+p{
+  text-align: justify;
+}
+p img{
+  float: right;
+  margin-left: 15px;
+  width: 250px;
+  height: 175px;
+}
+}
