@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Web forms example</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Пример за уеб формуляр</h1>
+
+  <form method="post" action="/server">
+    <input type="hidden" name="key" value="123426536">
+
+    <div id="flexbox">
+
+      <fieldset>
+        <legend>Basic info</legend>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your email" required>
+        </div>
+
+        <div>
+          <label for="password">Your password please</label>
+          <input type="password" name="password" id="password" placeholder="your password" required>
+        </div>
+
+        <div>
+          <label for="color">Your favourite color</label>
+          <input id="color" name="color" type="color" value="#990000">
+        </div>
+
+        <div>
+          <label for="age">Your age</label>
+          <input id="age" name="age" type="range" min="0" max="100" step="1">
+          <span id="age-display">50</span>
+        </div>
+
+        <div>
+          <label for="birthdate">Your birthdate</label>
+          <input type="date" name="birthdate" id="birthdate" placeholder="dd-mm-yyyy">
+        </div>
+
+        <div>
+          <label for="text">Tell me something</label>
+          <textarea id="text" name="text" cols="40" rows="6" placeholder="white me something"></textarea>
+        </div>
+
+        <div>
+          <label for="country">Your country</label>
+          <select name="country" id="country" required>
+            <option readonly value="" selected>Please choose</option>
+            <optgroup label="Eastern Europe">
+              <option value="bg">Bulgaria</option>
+              <option value="ro">Romania</option>
+              <option value="gr">Greece</option>
+            </optgroup>
+            <optgroup label="Western Europe">
+              <option value="fr">France</option>
+              <option value="de">Germany</option>
+              <option value="it">Italy</option>
+            </optgroup>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Hobby</legend>
+
+        <h3>Destinations:</h3>
+
+        <div>
+          <input type="checkbox" name="destination" id="london" value="london">
+          <label for="london">London</label>
+        </div>
+        <div>
+          <input type="checkbox" name="destination" id="paris" value="paris">
+          <label for="paris">Paris</label>
+        </div>
+        <div>
+          <input type="checkbox" name="destination" id="budapest" value="budapest">
+          <label for="budapest">Budapest</label>
+        </div>
+        <div>
+          <input type="checkbox" name="destination" id="rome" value="rome">
+          <label for="rome">Rome</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pets</legend>
+
+        <h3>Choose your favourite animal</h3>
+
+        <div>
+          <input type="radio" name="animal" id="cat" value="cat">
+          <label for="cat">Cat</label>
+        </div>
+        <div>
+          <input type="radio" name="animal" id="dog" value="dog">
+          <label for="dog">Dog</label>
+        </div>
+        <div>
+          <input type="radio" name="animal" id="parrot" value="parrot">
+          <label for="parrot">Parrot</label>
+        </div>
+
+        <input type="file">
+      </fieldset>
+    </div>
+
+    <div id="submit">
+      <!--      <input type="submit" value="Send" disabled>-->
+      <button type="submit">Изпрати</button>
+    </div>
+  </form>
+
+  <script>
+    document.getElementById("age").addEventListener("change", function() {
+      var display = document.getElementById("age-display");
+      display.innerHTML = this.value;
+    });
+
+  </script>
+
+</body>
+
+</html>
