@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+.flex-container {
+    margin: 0 auto;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: center;
+}
+
+
+header {
+    display: flex;
+}
+
+header > div {
+    
+    width: 250px;
+    height: 100px;
+    margin: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.pink {
+    background-color: deeppink;
+    width: 350px;
+    height: 220px;
+    margin: 20px;
+}
+
+.blue {
+    background-color: lightskyblue;
+    height: 100px;
+    width: 150px;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 550px) {
+    .flex-container {
+        background-color: red;
+    }
+    
+    main {
+        display:flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+    
+    .pink, .blue {
+        height: 80px;
+        width: 100%;
+    }
+    
+
+}

@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+#flex-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    background-color: #FF6A00;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    width: 32px;
+    height: 32px;
+}
