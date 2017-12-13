@@ -1,0 +1,240 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    @media (min-width: 320px) and (max-width: 670px) {
+        body {
+            max-width: 100vw;
+            max-height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: rgb(50, 50, 50);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        header h1 {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 10px;
+        }
+        #home {
+            border-top: 1px solid rgb(185, 185, 185);
+        }
+        nav ul {
+            display: block;
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            margin: 10px;
+            display: block;
+            border-bottom: 1px solid rgb(185, 185, 185);
+            padding: 10px;
+        }
+        #main-container {
+            background-image: url(pic7.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+            position: relative;
+        }
+        div {
+            width: 400px;
+            height: 150px;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            left: 50%;
+            margin-left: -200px;
+            margin-top: 150px;
+            border: 5px solid rgb(219, 219, 219);
+            text-align: center;
+        }
+        h1 {
+            margin-top: 40px;
+        }
+        #navigation-center,
+        #photo-gallery,
+        footer {
+            display: none;
+        }
+    }
+
+    @media (min-width: 670px) and (max-width: 929px) {
+        body {
+            max-width: 100vw;
+            max-height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: rgb(50, 50, 50);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 1em;
+            justify-content: space-between;
+        }
+        #hamburger {
+            display: none
+        }
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 10px;
+            border-bottom: 1px solid rgb(185, 185, 185);
+        }
+        #main-container {
+            background-image: url(pic7.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+            position: relative;
+        }
+        div {
+            width: 400px;
+            height: 150px;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            left: 50%;
+            margin-left: -200px;
+            margin-top: 150px;
+            border: 5px solid rgb(219, 219, 219);
+            text-align: center;
+        }
+        h1 {
+            margin-top: 40px;
+        }
+        #navigation-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+        #navigation-center ul {
+            padding: 0;
+        }
+        #navigation-center nav ul li {
+            border-bottom: none;
+            margin: 20px;
+        }
+        #photo-gallery,
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #photo-gallery p {
+            margin: 0;
+        }
+        img {
+            max-width: 200px;
+            max-height: 200px;
+            padding: 10px;
+            margin: 0;
+        }
+        footer {
+            height: 200px;
+            background-color: rgb(50, 50, 50);
+            color: rgb(219, 219, 219);
+            margin-top: 40px;
+        }
+        footer i {
+            padding: 10px;
+        }
+    }
+
+    @media (min-width: 930px) {
+        body {
+            max-width: 100vw;
+            max-height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: rgb(50, 50, 50);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 1em;
+            justify-content: space-between;
+        }
+        #hamburger {
+            display: none
+        }
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 10px;
+            border-bottom: 1px solid rgb(185, 185, 185);
+        }
+        #main-container {
+            background-image: url(pic7.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+            position: relative;
+        }
+        div {
+            width: 400px;
+            height: 150px;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            left: 50%;
+            margin-left: -200px;
+            margin-top: 150px;
+            border: 5px solid rgb(219, 219, 219);
+            text-align: center;
+        }
+        h1 {
+            margin-top: 40px;
+        }
+        #navigation-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+        #navigation-center ul {
+            padding: 0;
+        }
+        #navigation-center nav ul li {
+            border-bottom: none;
+            margin: 20px;
+        }
+        #photo-gallery,
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #photo-gallery p {
+            margin: 0;
+        }
+        img {
+            max-width: 300px;
+            max-height: 300px;
+            padding: 10px;
+            margin: 0;
+        }
+        footer {
+            height: 200px;
+            background-color: rgb(50, 50, 50);
+            color: rgb(219, 219, 219);
+            margin-top: 40px;
+        }
+        footer i {
+            padding: 10px;
+        }
+    }

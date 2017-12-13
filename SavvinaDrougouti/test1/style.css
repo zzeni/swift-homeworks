@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
+
+.container {
+    border: 2px solid black;
+    width: 100%;
+    min-height: 600px;
+}
+
+div {
+    min-width: 200px;
+    min-height: 200px;
+    display: flex;
+}
+
+div p {
+    color: white;
+    margin: auto;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+
+/* Smallest first (<399px) */
+
+@media (max-width: 399px) {
+    .container {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+    }
+}
+
+
+/* 400 - 499 */
+
+@media (min-width: 400px) and (max-width: 499px) {
+    .container {
+        position: relative;
+    }
+    div {
+        position: absolute;
+    }
+    .red {
+        top: 0;
+        left: 0;
+    }
+    .blue {
+        top: 0;
+        right: 0;
+    }
+    .green {
+        bottom: 0;
+        left: 0;
+    }
+    .black {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+/* 500 - 599 */
+
+@media (min-width: 500px) and (max-width: 599px) {
+    .container {
+        position: relative;
+    }
+    div {
+        position: absolute;
+    }
+    .red {
+        bottom: 0;
+        right: 0;
+    }
+    .blue {
+        top: 0;
+        left: 0;
+    }
+    .green {
+        top: 0;
+        right: 0;
+    }
+    .black {
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
+/* 600 - 699 */
+
+@media (min-width: 600px) and (max-width: 699px) {
+    .container {
+        position: relative;
+    }
+    div {
+        position: absolute;
+    }
+    .red {
+        bottom: 0;
+        left: 0;
+    }
+    .blue {
+        bottom: 0;
+        right: 0;
+    }
+    .green {
+        top: 0;
+        left: 0;
+    }
+    .black {
+        top: 0;
+        right: 0;
+    }
+}
+
+
+/* 700 - 799 */
+
+@media (min-width: 700px) and (max-width: 799px) {
+    .container {
+        position: relative;
+    }
+    div {
+        position: absolute;
+    }
+    .red {
+        top: 0;
+        right: 0;
+    }
+    .blue {
+        bottom: 0;
+        left: 0;
+    }
+    .green {
+        bottom: 0;
+        right: 0;
+    }
+    .black {
+        top: 0;
+        left: 0;
+    }
+}
+
+
+/* > 800 */
+
+@media (min-width: 800px) {
+    .container {
+        display: flex;
+        align-items: flex-start;
+    }
+}
