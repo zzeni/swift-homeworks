@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet"  href="style.css">
+		<link rel="stylesheet"  href="style2.css" media="(min-width:650px)">
+		<link rel="stylesheet"  href="style3.css" media="(min-width:950px)">
+		
+	</head>
+	<body>
+		<h1>Web Forms</h1>
+		<div>
+			<input type="text" placeholder="Search..">
+		</div>
+		<hr>
+		
+		<form action="" method="post">
+			<fieldset>
+				<legend>Basic info</legend>
+				<div class="form-group">
+					<label>Your name:</label>
+					<input type="text" placeholder="your name" name="">
+				</div>
+				<div class="form-group">
+					<label>Your email:</label>
+					<input type="email" name="">
+				</div>
+				<div class="form-group">
+					<label>Your password:</label>
+					<input type="password" name="">
+				</div>
+				<div class="form-group">
+					<label>Your message</label>
+					<textarea cols="20" rows="5" placeholder="What do you think"></textarea>
+				</div>
+				<div class="form-group">
+					<button type="submit">Go</button>
+				</div>
+				<div class="form-group">
+					<label>Your color:</label>
+					<input type="color" name="">
+				</div>
+				<div class="form-group">
+					<label>Date:</label>
+					<input type="date" name="">
+				</div>
+			</fieldset>
+		</form>
+		<fieldset>
+			<legend>Selects</legend>
+			<label>
+				<input type="checkbox" name="it" value="html">HTML
+				<input type="checkbox" name="it" value="css">CSS
+				<input type="checkbox" name="it" value="javascript">Javascript
+			</label>
+			<div>
+				<button>Submit</button>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Selects</legend>
+			<label>
+				<input type="radio" name="it" value="">Check me!
+				<input type="radio" name="it" value="">Check me!
+				<input type="radio" name="it" value="">Check me!
+			</label>
+			<div>
+				<button>Submit</button>
+			</div>
+		</fieldset>
+		<p>What's your country</p>
+		<select name="country">
+			<option selected> Please choose</option>
+			<option value="BG">Bulgaria</option>
+			<option value="UK">UK</option>
+		</select>
+	</body>
+</html>

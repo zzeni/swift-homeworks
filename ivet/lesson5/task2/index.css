@@ -1,0 +1,29 @@
+*{
+	box-sizing: border-box;
+}
+
+header{
+	text-align: center;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  margin: auto
+}
+
+li {
+  width: 150px;
+  height: 55px;
+  border-right: 1px solid #303030;
+  text-align: center;
+  padding: 10px;
+  float: left;
+  background-color: white;
+}
+
+li:last-child{
+  border-right: none;
+}
+

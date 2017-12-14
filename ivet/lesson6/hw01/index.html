@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact form</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		
+		<form id="contact" method="get" action="success.html" novalidate1>
+			<h2>Свържете се с нас!</h2>
+			<div>
+				<label for="username">Вашите имена:</label>
+				<input type="text" name="username" id="username" placeholder="Име Фамилия" required>
+			</div>
+			<div>
+				<label for="email">Вашият имейл:</label>
+				<input type="email" name="email" id="email" placeholder="email@example.com" required>
+			</div>
+			<div>
+				<label for="language">Избор на език:</label>
+				<select>
+					<option value="bulgarian">Български</option>
+					<option value="german">Немски</option>
+					<option value="english">Английски</option>
+				</select>
+			</div>
+			<div>
+				<label for="tel">Телефон:</label>
+				<input type="tel" name="tel" id="tel" placeholder="+359xxxxxxxxx" required>
+			</div>
+			<div>
+				<label for="message">Съобщение:</label>
+				<textarea id="message" name="message" cols="50" rows="8" placeholder="Опишете Вашето запитване тук"></textarea>
+			</div>
+			<div id="button">
+				<label></label>
+				<input type="reset" value="Изтрий">
+				<input type="submit" value="Изпрати">
+			</div>
+		</form>
+	</body>
+</html>

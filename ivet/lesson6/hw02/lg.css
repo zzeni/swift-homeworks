@@ -1,0 +1,31 @@
+body {
+  background-color: #F3FFFF;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+.lg-only {
+  background-color: #E94D97;
+  color: white;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle div {
+  text-align: center;
+}
+
+.xs-only, .sm-only, .md-only {
+  display: none;
+}
