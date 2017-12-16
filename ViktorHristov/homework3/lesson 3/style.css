@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+    
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  width: 400px;
+  margin: auto
+}
+
+li {
+  width: 100px;
+  border: 1px solid;
+  text-align: center;
+  padding: 10px;
+  float: left;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+h2{
+    text-align: "justify";
+    padding: 10px;
+    
+        
+}
+#contacts{
+    background-color: blanchedalmond;
+    text-color: white;
+    text-align: justify;
+}
+
+#about{
+    background-color: blanchedalmond;
+    text-color: white;
+    text-align: justify;
+    
+}
