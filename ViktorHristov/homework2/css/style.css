@@ -1,0 +1,68 @@
+body {
+  background-color:gainsboro;
+  color: black;
+  font-size: 18px;
+  margin: 20px;
+  margin-bottom: 600px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+ul {
+  color: green;
+}
+
+ul {
+  color: green;
+}
+
+
+
+.rounded {
+  border-radius: 10px;
+}
+
+header, main, footer {
+  background-color: ghostwhite;
+  padding: 20px;
+}
+
+img {
+  float: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+article {
+  text-align: justify;
+  background-color: whitesmoke;
+  padding: 30px;
+}
+
+section {
+  background-color: gainsboro;
+  padding: 20px;
+}
+
+.button {
+  background-color: #eee;
+  padding: 2px 10px;
+  border: solid 1px;
+  color: black;
+  text-decoration: none
+}
+
+footer {
+  text-align: center;
+}
+
+mark {
+  background-color: red;
+}
+
+h1, h2 {
+  margin-top: 10;
+}
+

@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+}
+
+input,
+textarea,
+select {
+    border: 2px solid;
+    padding: 3px;
+}
+
+form > div {
+    padding: 5px;
+}
+
+form label {
+    width: 150px;
+    display: inline-block;
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+    vertical-align: top;
+}
+
+button {
+    box-shadow: 2px 2px black;
+    border: 2px solid;
+    background-color: white;
+    font-family: cursive;
+    font-weight: bold;
+}

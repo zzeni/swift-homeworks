@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 80vw;
+    height: 100px;
+    font-size: 16px;
+    margin: auto;
+    padding-top: 20px;
+}
+header{
+    display: block;
+    background-color: orange;
+    padding-left: 20px;
+
+}
+#flex-header{
+    display: flex;
+    flex-direction: row;
+}
+
+img { 
+    height: 50px;
+    width: 50px;
+    position:relative;
+    left: 850px;
+    top: 10px;
+    
+}
