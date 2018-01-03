@@ -1,0 +1,88 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    body, .intro h1 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        height: 100px;
+        background-color: rgb(4, 136, 96);
+    }
+
+    .intro {
+        padding: 20px;
+        text-align: center;
+        color: rgb(75, 75, 75);
+    }
+ 
+    .intro p {
+        margin-bottom: 0;
+    }
+
+    main {
+        padding: 30px;
+        background-color: rgb(218, 218, 218);
+        width: 100%;
+    }
+
+    #message, .info {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .btn {
+        background-color: rgb(4, 136, 96);
+        color: whitesmoke;
+    }
+
+    .info {
+        list-style: none;
+        margin-top: 15px;
+    }
+
+    .info li {
+        padding-bottom: 10px;
+    }
+
+    .location {
+        padding-left: 15px;
+    }
+
+    .fa {
+        padding-right: 5px;
+    }
+
+    .footer {
+        background-color: rgb(75, 75, 75);
+        height: 100px;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer p, .arrow-footer {
+        color: whitesmoke;
+        margin-bottom: 0;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arrow-footer {
+        background-color: rgb(4, 136, 96);
+        width: 40px;
+        font-size: 30px;
+    }
+
+    #arrow {
+        padding-right: 0;
+    }
+
+
