@@ -1,0 +1,89 @@
+/* HINT: Use just A Colour Picker to get the colors */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAF0E6;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Fantasy, sans-serif;
+}
+
+p {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+small {
+    font-size: 25px;
+}
+
+.circle {
+    background-color: #7C8500;
+    color: white;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle div {
+    text-align: center;
+    color: white;
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+    
+    .sm-only, .md-only, .lg-only {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 481px) {
+    body {
+        background-color: red;
+    }
+    
+    .xs-only, .md-only, .lg-only {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 680px) {
+    body {
+        background-color: lightblue;
+    }
+    
+    .xs-only, .sm-only, .lg-only {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: pink;
+    }
+    
+    .xs-only, .sm-only, .md-only {
+        display: none;
+    }
+
+}
