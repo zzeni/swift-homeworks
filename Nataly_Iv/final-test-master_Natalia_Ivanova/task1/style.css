@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+    
+  font-family: sans-serif;
+  line-height: 1.6em;
+  padding-bottom: 400px;
+}
+
+.subtask {
+  margin: 20px 0;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+}
+
+ul > li {
+  list-style-type: none;
+  padding: 20px;
+  background-color: lightpink;
+  width: calc(100%/6);
+}
+
+ul > li img {
+  margin: 0 auto;
+  display: block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Вашият CSS от тук надолу */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+#subtask5 > ul > li:hover { 
+    opacity: 0.5;
+}
+#subtask5 > ul > li::after {
+    content: "IMAGINE THAT!"; 
+    position: absolute; 
+}
+/*
+@media only screen and (min-width: 400px) {
+    img {
+        width: 200px;
+    }
+}
+/*
+@media only screen and (min-width: 600px) {
+    subtask1 >ul > li {
+        width: calc(100%/3);
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    subtask1 >ul > li {
+        width: 100%;
+        height: auto;
+    }
+}
+*/
