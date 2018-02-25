@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Детска градина</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <nav class="float-right">
+            <ul class="nav nav-pills" role="tablist">
+                <li role="presentation" class="nav-item">
+                    <a class="nav-link active" href="#home" aria-controls="home1" role="tab" data-toggle="tab">Home</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                    <a id="to-about" class="nav-link" href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                    <a class="nav-link" href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Cntacts</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="jumbotron text-center">
+            <h1>Детска градина "Калпазани"</h1>
+        </div>
+    </div>
+    <div class="container tab-content">
+        <section id="home" role="tabpanel" class="tab-pane fade show active">
+            <form name="filters" id="filters" class="form-inline">
+                <input name="textFilter" id="keywords" class="form-control m-2" placeholder="Филтрирай по име, храна или любима игра">
+                <button type="button" name="sortByName" class="btn btn-primary m-2" id="nameAsc">Пордеди по име (възходящ ред)</button>
+                <button type="button" name="sortByAge" class="btn btn-success m-2" id="ageAsc">Пордеди по възраст (възходящ ред)</button>
+                <button type="button" name="sortByAgeDes" class="btn btn-success m-2" id="ageDes">Пордеди по възраст (низходящ)</button>
+                <select id="game-filter" name="gameFilter" class="form-control m-2">
+          <option value="" readonly>Изберете игра</option>
+          <option value="LEGO">LEGO</option>
+          <option value="Кукла Барби">Кукла Барби</option>
+          <option value="футбол">футбол</option>
+          <option value="кукли">кукли</option>
+          <option value="криеница" readonly>криеница</option>
+         <option value="фризби">фризби</option>
+        </select>
+            </form>
+
+
+
+            <h2 class="my-4">Запознайте се с нашите малки калпазани:</h2>
+            <div id="kids-list" class="row">
+            </div>
+        </section>
+
+        <section id="about" role="tabpanel" class="tab-pane fade"></section>
+
+        <section id="contact" role="tabpanel" class="fade tab-pane"></section>
+    </div>
+
+    <div class="modal fade" id="kidModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

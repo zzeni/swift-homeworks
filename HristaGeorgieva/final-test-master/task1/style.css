@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6em;
+  padding-bottom: 400px;
+}
+
+.subtask {
+  margin: 20px 0;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+}
+
+ul > li {
+  list-style-type: none;
+  padding: 20px;
+  background-color: lightpink;
+  width: calc(100%/6);
+}
+
+ul > li img {
+  margin: 0 auto;
+  display: block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+/* Вашият CSS от тук надолу */
+@media screen and (min-width: 1000px){
+    .row ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px){
+  ul li {
+        width: calc(100%/2);
+        min-width: 260px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 599px){
+    ul li {
+        width: calc(100%/3);
+        min-width: 260px;
+    }
+}
+
+@media screen and (max-width: 399px){
+    ul li {
+        width: 100%;
+        min-width: 260px;
+    }
+}
+.row ul {
+    width: 90vw;
+}
+    
+    
+    .row li img{
+        margin: 0;
+        max-width: 100%;
+    }
+
+#subtask2 li:nth-child(even) {
+    background-color: lightblue;
+}
+
+#subtask3 li:hover {
+    background-color: lightblue;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+
+#subtasks4 li:nth-last-of-type(1) {
+    order: 6;
+}
+
+#subtasks4 li:nth-last-of-type(6) {
+    order: 1;
+}
+
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subtask5 ul {
+    position: relative;
+}
+
+
+#subtask5 ul li::after {
+    background-color: #ccc;
+    opacity: 0,5;
+    position: absolute;
+}
+
+#subtask5 li::after {
+    content: "IMAGINE THAT!";
+    position: absolute;
+}
+
+
+
+
