@@ -1,0 +1,21 @@
+body {
+    font-family: "Helvetica";
+    background-color: ghostwhite;
+    color: darkslategray;
+}
+
+h1 {
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 45px;
+
+}
+
+#flower {
+    border: 3px solid darkslategrey;
+    padding: 10px
+}
+
+ul {
+    padding: 15px;
+}
