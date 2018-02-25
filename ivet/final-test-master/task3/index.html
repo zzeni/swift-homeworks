@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Детска градина</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="heading">
+    <nav class="float-right">
+      <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="nav-item">
+          <a class="nav-link active" href="#home" aria-controls="home1" role="tab" data-toggle="tab">Home</a>
+        </li>
+        <li role="presentation" class="nav-item">
+          <a class="nav-link" href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a>
+        </li>
+        <li role="presentation" class="nav-item">
+          <a class="nav-link" href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Cntacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="jumbotron text-center">
+      <h1>Детска градина "Калпазани"</h1>
+    </div>
+  </div>
+  <div class="container tab-content">
+    <section id="home" role="tabpanel" class="tab-pane fade show active">
+      <form name="filters" id="filters" class="form-inline">
+        <input name="textFilter" class="form-control m-2" placeholder="Филтрирай по име, храна или любима игра">
+        <button type="button" name="sortByName" class="btn btn-primary m-2">Пордеди по име</button>
+        <button type="button" name="sortByAge" class="btn btn-success m-2">Пордеди по възраст</button>
+        <select name="gameFilter" class="form-control m-2">
+          <option value="" readonly>Изберете игра</option>
+        </select>
+      </form>
+
+      <h2 class="my-4">Запознайте се с нашите малки калпазани:</h2>
+      <div id="kids" class="row">
+        <div class="kid col-md-6 mb-5">
+          <div class="card">
+            <div class="card-heading bg-info text-white">
+              <h3 class="m-3">Дейвид</h3>
+            </div>
+            <div class="card-body row">
+              <div class="col-lg-4">
+                <img class="img-fluid" src="img/david.png">
+              </div>
+              <div class="col-lg-8">
+                <ul class="my-4">
+                  <li><h5>Години: 4</h5></li>
+                  <li><h5>Любим цвят: зелен</h5></li>
+                  <li><h5>Любима игра: LEGO</h5></li>
+                  <li><h5>Любима храна: сладолед</h5></li>
+                </ul>
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#kidModal">Още</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="kid col-md-6 mb-5">
+          <div class="card">
+            <div class="card-heading bg-info text-white">
+              <h3 class="m-3">Сюзан</h3>
+            </div>
+            <div class="card-body row">
+              <div class="col-lg-4">
+                <img class="img-fluid" src="img/susan.jpg">
+              </div>
+              <div class="col-lg-8">
+                <ul class="my-4">
+                  <li><h5>Години: 4</h5></li>
+                  <li><h5>Любим цвят: син</h5></li>
+                  <li><h5>Любима игра: кукла Барби</h5></li>
+                  <li><h5>Любима храна: крем карамел</h5></li>
+                </ul>
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#kidModal">Още</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" role="tabpanel" class="tab-pane fade"></section>
+
+    <section id="contact" role="tabpanel" class="fade tab-pane"></section>
+  </div>
+
+  <div class="modal fade" id="kidModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+
+</html>
