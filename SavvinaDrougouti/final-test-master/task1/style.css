@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6em;
+  padding-bottom: 400px;
+}
+
+.subtask {
+  margin: 20px 0;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+}
+
+ul>li {
+  list-style-type: none;
+  padding: 20px;
+  background-color: lightpink;
+  width: calc(100%/6);
+}
+
+ul>li img {
+  margin: 0 auto;
+  display: block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Вашият CSS от тук надолу */
+
+ul {
+  flex-wrap: wrap;
+}
+
+ul li img {
+  max-width: 100%;
+}
+
+@media (max-width:399px) {
+  ul li {
+      width: 100%;
+  }
+}
+
+@media (min-width:400px) and (max-width:599px) {
+  ul li {
+      width: calc(100%/2);
+  }
+}
+
+@media (min-width:600px) and (max-width:1000px) {
+  ul li {
+      width: calc(100%/3);
+  }
+}
+
+@media (min-width:1000px) {
+  ul li img {
+      display: inline;
+  }
+}
+
+/* Задача 1.b */
+
+#subtask2 li:nth-of-type(even) {
+  background: lightblue
+}
+
+/* Задача 1.c */
+
+#subtask3 li:hover {
+  background: lightblue;
+  transform: rotateY(360deg);
+  transition: 1s ease-in-out;
+}
+
+/* Задача 1.d */
+
+
+/* Задача 1.e */
+
+#subtask5 li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#subtask5 li:hover::after {
+  content: "IMAGINE THAT!";
+  position: absolute; 
+}
