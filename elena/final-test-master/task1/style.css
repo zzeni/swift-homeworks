@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6em;
+  padding-bottom: 400px;
+}
+
+.subtask {
+  margin: 20px 0;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+}
+
+ul > li {
+  list-style-type: none;
+  padding: 20px;
+  background-color: lightpink;
+  width: calc(100%/6);
+}
+
+ul > li img {
+  margin: 0 auto;
+  display: block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Вашият CSS от тук надолу */
+
+ul {
+    max-width: 100%;
+}
+
+li:hover {
+    transform: rotateY(360deg);
+    background-color: lightblue;
+}
+
+li {
+    max-width: 100%;
+    float: left;
+}
+
+@media (min-width: 1000px) {
+    ul {
+        display: inline-flex;
+    }         
+}
+
+@media (min-width: 600px) {
+    
+}
+
+@media (min-width: 400px) {
+    
+}
