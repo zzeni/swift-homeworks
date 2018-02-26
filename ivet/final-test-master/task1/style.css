@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6em;
+  padding-bottom: 400px;
+}
+
+.subtask {
+  margin: 20px 0;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+}
+
+ul > li {
+  list-style-type: none;
+  padding: 20px;
+  background-color: lightpink;
+  width: calc(100%/6);
+}
+
+ul > li img {
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Вашият CSS от тук надолу */
+
+
+@media all and (max-width: 399px) {
+
+    ul > li {
+        width: 100%;
+
+    }
+}
+
+@media all and (min-width: 400px) and (max-width: 599px) {
+
+   ul > li {
+        width: calc(100%/3);
+             
+        
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 999px) {
+    ul > li {
+        width: calc(100%/2);
+         
+    }
+}
+
+@media all and (min-width: 1000px) {
+
+   ul > li {
+        width: calc(100%/6);
+        
+       
+    }
+}
+
+
+
+/*Task 1.b*/
+
+#subtask2 li:nth-child(even) {
+
+  background-color: lightblue;
+
+}
+
+/*Task 1.c*/
+
+#subtask3 li:hover {
+
+  background-color: lightblue;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration:1s;
+
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+
+}
+
+/*Task 1.e*/
+
+#subtask5 li{
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+
+#subtask5 li::after {
+    position: absolute;
+    content: "IMAGINE THAT!";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
