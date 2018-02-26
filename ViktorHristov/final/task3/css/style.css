@@ -1,0 +1,21 @@
+.jumbotron {
+  background-color: lightblue;
+  background-image: url(../img/kids-bg.png);
+  background-size: contain;
+  color: #f1f1f1;
+  text-shadow: 2px 4px 9px #333;
+}
+
+button[data-direction=asc].active::after {
+  content: "\2191";
+  margin-left: 10px;
+}
+
+button[data-direction=desc].active::after {
+  content: "\2193";
+  margin-left: 10px;
+}
+
+#contact iframe {
+  width: 100%;
+}
