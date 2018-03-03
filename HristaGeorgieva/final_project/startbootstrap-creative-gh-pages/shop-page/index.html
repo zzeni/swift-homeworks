@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top orange">
+        <div class="container">
+
+            <a class="navbar-brand text-uppercase font-weight-bold" href="../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-light text-uppercase font-weight-bold mr-4" id="cart-button" data-toggle="modal" data-target="#cart-modal">Shopping Cart <i class="fas fa-shopping-cart"></i>$<span class="total-price">0</span></button>
+                    </li>
+
+                    <div class="form-inline">
+
+                        <input type="text" id="keywords" name="keywords" class="form-control" placeholder="Search">
+                        <label for="keywords" class="ml-2 d-none d-md-block"><i class="fas fa-search" id="search-icon"></i></label>
+
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" id="container">
+
+        <div class="row">
+
+            <div class="col-lg-3">
+
+                <img src="img/logo1.png" alt="logo" class="col-lg-12 my-4">
+                <div class="list-group" id="category-filter">
+                    <a href="#shop-items" class="list-group-item" data-category="all">All</a>
+                    <a href="#shop-items" class="list-group-item" data-category="men clothing">Men's Clothing</a>
+                    <a href="#shop-items" class="list-group-item" data-category="women clothing">Women's Clothing</a>
+                    <a href="#shop-items" class="list-group-item" data-category="men accessoires">Men's Accessoires</a>
+                    <a href="#shop-items" class="list-group-item" data-category="women accessoires">Women's Accessoires</a>
+                    <a href="#shop-items" class="list-group-item" data-category="men shoes">Men's Shoes</a>
+                    <a href="#shop-items" class="list-group-item" data-category="women shoes">Women's Shoes</a>
+                </div>
+
+                <div class="dropdown show">
+                    <a class="btn btn-block dropdown-toggle mt-1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sort By
+  </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#" id="name-asc">Name Ascending</a>
+                        <a class="dropdown-item" href="#" id="name-des">Name Descending</a>
+                        <a class="dropdown-item" href="#" id="price-asc">Price Ascending</a>
+                        <a class="dropdown-item" href="#" id="price-des">Price Descending</a>
+                    </div>
+                </div>
+                
+                 <div class="dropdown show">
+                    <a class="btn btn-block dropdown-toggle mt-1" href="#" role="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Filter by color
+  </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdown" id="color-filter">
+                        <a class="dropdown-item" href="#" data-category="all">All</a>
+                        <a class="dropdown-item" href="#" data-category="yellow">Yellow</a>
+                        <a class="dropdown-item" href="#" data-category="white">White</a>
+                        <a class="dropdown-item" href="#" data-category="blue">Blue</a>
+                        <a class="dropdown-item" href="#" data-category="golden">Golden</a>
+                        <a class="dropdown-item" href="#" data-category="orange">Orange</a>
+                         <a class="dropdown-item" href="#" data-category="brown">Brown</a>
+                        <a class="dropdown-item" href="#" data-category="grey">Grey</a>
+                         <a class="dropdown-item" href="#" data-category="black">Black</a>
+                         <a class="dropdown-item" href="#" data-category="red">Red</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-lg-3 -->
+
+            <div class="col-lg-9">
+
+                <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="img/pexels-photo-298863.jpeg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="img/pexels-photo-322207.jpeg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="img/pexels-photo-404159.jpeg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+                </div>
+
+                <div id="shop-items" class="row">
+
+
+                </div>
+
+                
+
+                <!-- Item Modal -->
+                <div id="item-modal" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"><span class="item-name">Modal title</span> - $<span class="item-price">0</span></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="item-image img-fluid" src="http://placehold.it/750x500">
+                                <p class="item-description">Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn orange buy-btn">Buy $<span class="item-price">0</span></button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Modal -->
+                <div id="cart-modal" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"><span class="title">Your shopping cart</span> - $<span class="total">0</span></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                            </div>
+                            <div class="modal-body" id="cart-container">
+
+                            </div>
+                            <div class="modal-footer">
+                                <h4>Total $<span class="total">0</span></h4>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /.row -->
+
+            </div>
+            <!-- /.col-lg-9 -->
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 orange">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+ .orange {
+     background-color: #F05F40;
+ }
+
+ #search-icon {
+     color: white;
+ }
+
+ #category-filter a,
+ .dropdown a {
+     color: #3c3938;
+     border: 1px solid #F05F40;
+ }
+
+ #category-filter a:hover,
+ .dropdown a:hover {
+     color: white;
+     background-color: #F05F40
+ }
