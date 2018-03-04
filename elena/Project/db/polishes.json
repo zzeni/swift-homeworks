@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Red",
+        "color": "Red",
+        "price": 12,
+        "imgID": 1
+    },
+    {
+        "title": "Strawberry",
+        "color": "Red",
+        "price": 15,
+        "imgID": 2
+    },
+    {
+        "title": "Raspberry",
+        "color": "Red",
+        "price": 17,
+        "imgID": 3
+    },
+    {
+        "title": "Blue",
+        "color": "Blue",
+        "price": 12,
+        "imgID": 4
+    },
+    {
+        "title": "Blue Day",
+        "color": "Blue",
+        "price": 11,
+        "imgID": 5
+    },
+    {
+        "title": "Blue Sky",
+        "color": "Blue",
+        "price": 14,
+        "imgID": 6
+    },
+    {
+        "title": "Purple",
+        "color": "Purple",
+        "price": 12,
+        "imgID": 7
+    },
+    {
+        "title": "Deep Purple",
+        "color": "Purple",
+        "price": 14,
+        "imgID": 8
+    },
+    {
+        "title": "Glitter purple",
+        "color": "Glitter",
+        "price": 17,
+        "imgID": 9
+    },
+    {
+        "title": "Gold",
+        "color": "Glitter",
+        "price": 16,
+        "imgID": 10
+    },
+    {
+        "title": "Night",
+        "color": "Glitter",
+        "price": 18,
+        "imgID": 11
+    },
+    {
+        "title": "Pink",
+        "color": "Pink",
+        "price": 10,
+        "imgID": 12
+    }
+]
