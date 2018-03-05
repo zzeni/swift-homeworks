@@ -1,0 +1,48 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+*{
+  box-sizing: border-box;
+}
+
+header{
+  background-color: darkgrey;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  font-family: "Courier New", cursive;
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+ul li{
+    border: 1px solid grey;
+    padding: 7px;
+}
+ul li a{
+  text-decoration: none;
+  color:grey;
+}
+ul li a i{
+  width: 50px;
+  height: 20px;
+}
+
+ul li:hover{
+  background-color: #ffe1db;
+}
+ul li a:hover{
+  color:#7c5d57;
+}
+.fa-facebook:hover{
+  color: #3b5998;
+}
+.fa-twitter:hover{
+  color: #55acee;
+}
+.fa-linkedin:hover{
+   color: #007bb5;
+}
+.fa-google-plus:hover{
+  color: #dd4b39;
+}
