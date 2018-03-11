@@ -1,0 +1,9 @@
+.navbar-main {
+    background-color: hotpink;
+    color: bisque;
+}
+
+.carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
